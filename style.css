@@ -1,1 +1,169 @@
 
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdf8f0;
+  color: #2c1a00;
+}
+
+/* Header */
+#site-header {
+  background-color: #e08f00;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-logo {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-tagline {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+/* Nav */
+#main-nav {
+  background-color: #2c1a00;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+}
+
+.nav-link:hover {
+  color: #e08f00;
+}
+
+/* Main */
+#main-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section */
+.products-section {
+  flex: 1;
+}
+
+.section-heading {
+  color: #e08f00;
+  border-bottom: 2px solid #e08f00;
+  padding-bottom: 8px;
+}
+
+/* Article */
+.product-card {
+  background-color: white;
+  border: 1px solid #f0d080;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Figure */
+.product-figure {
+  margin: 0 0 10px;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Figcaption */
+.product-caption {
+  font-size: 0.82rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  margin: 8px 0 4px;
+}
+
+.product-price {
+  color: #e08f00;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+/* Time */
+.product-date {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 4px 0 10px;
+}
+
+/* Reusable Button */
+.btn {
+  background-color: #e08f00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn:hover {
+  background-color: #c47a00;
+}
+
+/* Aside */
+#sidebar {
+  width: 200px;
+  align-self: start;
+  background-color: white;
+  border: 1px solid #f0d080;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.sidebar-heading {
+  color: #e08f00;
+  margin: 0 0 10px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0d080;
+}
+
+/* Footer */
+#site-footer {
+  background-color: #2c1a00;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.9rem;
+}
