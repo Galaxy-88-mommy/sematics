@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,80 +8,242 @@
 </head>
 <body>
 
-  <!-- 1. HEADER -->
+  <!-- =====================
+       1. HEADER
+  ===================== -->
   <header id="site-header">
     <h1 class="site-logo">Nana Shop</h1>
     <p class="site-tagline">Kenya's Online Store</p>
   </header>
 
-  <!-- 2. NAV -->
+  <!-- =====================
+       2. NAV
+  ===================== -->
   <nav id="main-nav">
     <ul class="nav-list">
       <li><a href="#" class="nav-link">Home</a></li>
       <li><a href="#" class="nav-link">Products</a></li>
       <li><a href="#" class="nav-link">About</a></li>
-      <li><a href="#" class="nav-link">Contact</a></li>
+      <li><a href="#contact-section" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- 3. MAIN -->
+  <!-- =====================
+       3. MAIN
+  ===================== -->
   <main id="main-content">
 
-    <!-- 4. SECTION -->
+    <!-- =====================
+         4. SECTION — Products
+    ===================== -->
     <section id="products" class="products-section">
       <h2 class="section-heading">Featured Products</h2>
 
-      <!-- 5. ARTICLE -->
+      <!-- =====================
+           5. ARTICLE — Product Card
+      ===================== -->
       <article class="product-card">
 
-        <!-- 6. FIGURE -->
+        <!-- =====================
+             6. FIGURE
+        ===================== -->
         <figure class="product-figure">
-          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Kikoy+Wrap"
-               alt="Kikoy Wrap" class="product-image" />
+          <img
+            src="https://placehold.co/300x180/fff8ed/e08f00?text=Kikoy+Wrap"
+            alt="Kikoy Wrap"
+            class="product-image"
+          />
           <!-- 7. FIGCAPTION -->
-          <figcaption class="product-caption">Handwoven Kenyan Kikoy</figcaption>
+          <figcaption class="product-caption">
+            Handwoven Kenyan Kikoy — traditional fabric
+          </figcaption>
         </figure>
 
         <h3 class="product-name">Kikoy Wrap</h3>
         <p class="product-price">KSh 1,200</p>
+
         <!-- 8. TIME -->
-        <p class="product-date">Added: <time datetime="2026-07-07">7 July 2026</time></p>
+        <p class="product-date">
+          Added: <time datetime="2026-07-07">7 July 2026</time>
+        </p>
+
         <button class="btn">Add to Cart</button>
       </article>
 
-      <!-- ARTICLE -->
+      <!-- ARTICLE — Second Product Card -->
       <article class="product-card">
 
-        <!-- FIGURE -->
         <figure class="product-figure">
-          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Beaded+Necklace"
-               alt="Beaded Necklace" class="product-image" />
-          <!-- FIGCAPTION -->
-          <figcaption class="product-caption">Maasai Beaded Necklace</figcaption>
+          <img
+            src="https://placehold.co/300x180/fff8ed/e08f00?text=Beaded+Necklace"
+            alt="Beaded Necklace"
+            class="product-image"
+          />
+          <figcaption class="product-caption">
+            Maasai Beaded Necklace — handmade accessory
+          </figcaption>
         </figure>
 
         <h3 class="product-name">Beaded Necklace</h3>
         <p class="product-price">KSh 850</p>
-        <!-- TIME -->
-        <p class="product-date">Added: <time datetime="2026-07-05">5 July 2026</time></p>
+
+        <p class="product-date">
+          Added: <time datetime="2026-07-05">5 July 2026</time>
+        </p>
+
         <button class="btn">Add to Cart</button>
       </article>
 
     </section>
 
-    <!-- 9. ASIDE -->
+    <!-- =====================
+         9. ASIDE — Sidebar
+    ===================== -->
     <aside id="sidebar">
       <h3 class="sidebar-heading">Categories</h3>
       <ul class="category-list">
         <li class="category-item">Fashion</li>
         <li class="category-item">Electronics</li>
         <li class="category-item">Accessories</li>
+        <li class="category-item">Home &amp; Living</li>
       </ul>
     </aside>
 
   </main>
 
-  <!-- 10. FOOTER -->
+  <!-- =====================
+       SECTION — Contact Form
+  ===================== -->
+  <section id="contact-section" class="form-section">
+    <h2 class="section-heading">Contact Us</h2>
+
+    <form id="contact-form" class="contact-form">
+
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="first-name" class="form-label">First Name</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          class="form-input"
+          placeholder="Enter your first name"
+          required
+        />
+      </div>
+
+      <!-- Second Name -->
+      <div class="form-group">
+        <label for="second-name" class="form-label">Second Name</label>
+        <input
+          type="text"
+          id="second-name"
+          name="second-name"
+          class="form-input"
+          placeholder="Enter your second name"
+          required
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email" class="form-label">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-input"
+          placeholder="example@email.com"
+          required
+        />
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="form-input"
+          placeholder="07XX XXX XXX"
+          required
+        />
+      </div>
+
+      <!-- Date -->
+      <div class="form-group">
+        <label for="dob" class="form-label">Date of Birth</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          class="form-input"
+        />
+      </div>
+
+      <!-- Search Bar -->
+      <div class="form-group">
+        <label for="search" class="form-label">Search Products</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          class="form-input"
+          placeholder="Search for a product..."
+        />
+      </div>
+
+      <!-- File Attachment -->
+      <div class="form-group">
+        <label for="attachment" class="form-label">Attach File</label>
+        <input
+          type="file"
+          id="attachment"
+          name="attachment"
+          class="form-input"
+        />
+      </div>
+
+      <!-- Radio Buttons — Gender -->
+      <div class="form-group">
+        <p class="form-label">Gender</p>
+        <label class="radio-label">
+          <input type="radio" name="gender" value="male" /> Male
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="gender" value="female" /> Female
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="gender" value="other" /> Other
+        </label>
+      </div>
+
+      <!-- Checkboxes — Interests -->
+      <div class="form-group">
+        <p class="form-label">Interests</p>
+        <label class="checkbox-label">
+          <input type="checkbox" name="interest" value="fashion" /> Fashion
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="interest" value="electronics" /> Electronics
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="interest" value="offers" /> Special Offers
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- =====================
+       10. FOOTER
+  ===================== -->
   <footer id="site-footer">
     <p class="footer-text">
       &copy; <time datetime="2026">2026</time> Nana Shop. Nairobi, Kenya.
