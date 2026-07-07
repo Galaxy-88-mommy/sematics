@@ -1,29 +1,46 @@
+/* =============================================
+   NANA SHOP — STYLESHEET
+   Following CSS Best Practices:
+   - Meaningful class names
+   - Organized into sections with comments
+   - DRY principle (reusable .btn class)
+   - Shorthand properties
+   - IDs only for unique elements
+   - Simple selectors
+============================================= */
+
+
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #fdf8f0;
+  background-color: #fdf8f0;
   color: #2c1a00;
 }
 
+
+/* Header */
 #site-header {
-  background: #e08f00;
+  background-color: #e08f00;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
-.logo {
-  font-size: 2rem;
+.site-logo {
   margin: 0;
+  font-size: 2rem;
 }
 
-.tagline {
-  font-size: 1rem;
+.site-tagline {
   margin: 5px 0 0;
+  font-size: 1rem;
 }
 
+
+/* Navigation */
 #main-nav {
-  background: #2c1a00;
+  background-color: #2c1a00;
   padding: 10px 20px;
 }
 
@@ -39,84 +56,113 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 12px;
 }
 
 .nav-link:hover {
   color: #e08f00;
 }
 
+
+/* Main Content Layout */
 #main-content {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
 
-.section {
-  flex: 1;
-}
 
-.section-title {
+/* Section Headings */
+.section-heading {
   color: #e08f00;
   border-bottom: 2px solid #e08f00;
   padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+
+/* Product Cards */
+#products {
+  flex: 1;
 }
 
 .product-card {
-  background: white;
+  background-color: white;
   border: 1px solid #f0d080;
   border-radius: 8px;
   padding: 15px;
-  margin-bottom: 15px;
-}
-
-.product-name {
-  font-size: 1.1rem;
-  margin: 10px 0 5px;
-}
-
-.product-price {
-  color: #e08f00;
-  font-weight: bold;
-}
-
-.product-date {
-  font-size: 0.85rem;
-  color: #888;
+  margin-bottom: 20px;
 }
 
 .product-image {
-  margin: 0;
-}
-
-.product-image img {
   width: 100%;
   border-radius: 6px;
 }
 
-.image-caption {
-  font-size: 0.8rem;
+.product-figure {
+  margin: 0 0 10px;
+}
+
+.product-caption {
+  font-size: 0.82rem;
   color: #666;
   font-style: italic;
   margin-top: 5px;
 }
 
+.product-name {
+  margin: 8px 0 4px;
+  font-size: 1.1rem;
+}
+
+.product-price {
+  color: #e08f00;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.product-date {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 4px 0 10px;
+}
+
+
+/* Reusable Button — used on all buttons (DRY principle) */
+.btn {
+  background-color: #e08f00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c47a00;
+}
+
+
+/* Sidebar */
 #sidebar {
   width: 200px;
-  background: white;
+  align-self: start;
+  background-color: white;
   border: 1px solid #f0d080;
   border-radius: 8px;
   padding: 15px;
-  align-self: start;
 }
 
-.sidebar-title {
+.sidebar-heading {
   color: #e08f00;
-  margin-top: 0;
+  margin: 0 0 10px;
 }
 
 .category-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .category-item {
@@ -124,8 +170,10 @@ body {
   border-bottom: 1px solid #f0d080;
 }
 
+
+/* Footer */
 #site-footer {
-  background: #2c1a00;
+  background-color: #2c1a00;
   color: white;
   text-align: center;
   padding: 15px;
