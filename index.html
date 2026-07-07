@@ -4,63 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nana Shop</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Nana Shop</h1>
-    <p>Kenya's Online Store</p>
+  <header id="site-header">
+    <h1 class="logo">Nana Shop</h1>
+    <p class="tagline">Kenya's Online Store</p>
   </header>
 
-  <!-- NAV -->
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Contact</a></li>
+  <nav id="main-nav">
+    <ul class="nav-list">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">Products</a></li>
+      <li><a href="#" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main>
+  <main id="main-content">
 
-    <!-- SECTION -->
-    <section>
-      <h2>Featured Products</h2>
+    <section id="products" class="section">
+      <h2 class="section-title">Featured Products</h2>
 
-      <!-- ARTICLE -->
-      <article>
-        <h3>Kikoy Wrap</h3>
-        <p>A beautiful traditional Kenyan fabric.</p>
-
-        <!-- FIGURE + FIGCAPTION -->
-        <figure>
-          <img src="kikoy.jpg" alt="Kikoy Wrap" />
-          <figcaption>Handwoven Kenyan Kikoy — KSh 1,200</figcaption>
+      <article class="product-card">
+        <figure class="product-image">
+          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Kikoy+Wrap" alt="Kikoy Wrap" />
+          <figcaption class="image-caption">Handwoven Kenyan Kikoy</figcaption>
         </figure>
+        <h3 class="product-name">Kikoy Wrap</h3>
+        <p class="product-price">KSh 1,200</p>
+        <p class="product-date">Added: <time datetime="2026-07-07">7 July 2026</time></p>
+      </article>
 
-        <!-- TIME -->
-        <p>Added: <time datetime="2026-07-07">7 July 2026</time></p>
+      <article class="product-card">
+        <figure class="product-image">
+          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Beaded+Necklace" alt="Beaded Necklace" />
+          <figcaption class="image-caption">Maasai Beaded Necklace</figcaption>
+        </figure>
+        <h3 class="product-name">Beaded Necklace</h3>
+        <p class="product-price">KSh 850</p>
+        <p class="product-date">Added: <time datetime="2026-07-05">5 July 2026</time></p>
       </article>
 
     </section>
 
-    <!-- ASIDE -->
-    <aside>
-      <h3>Categories</h3>
-      <ul>
-        <li>Fashion</li>
-        <li>Electronics</li>
-        <li>Accessories</li>
+    <aside id="sidebar">
+      <h3 class="sidebar-title">Categories</h3>
+      <ul class="category-list">
+        <li class="category-item">Fashion</li>
+        <li class="category-item">Electronics</li>
+        <li class="category-item">Accessories</li>
       </ul>
     </aside>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; <time datetime="2026">2026</time> Nana Shop. Nairobi, Kenya.</p>
+  <footer id="site-footer">
+    <p class="footer-text">
+      &copy; <time datetime="2026">2026</time> Nana Shop. Nairobi, Kenya.
+    </p>
   </footer>
 
 </body>
