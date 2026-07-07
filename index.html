@@ -8,11 +8,13 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header id="site-header">
-    <h1 class="logo">Nana Shop</h1>
-    <p class="tagline">Kenya's Online Store</p>
+    <h1 class="site-logo">Nana Shop</h1>
+    <p class="site-tagline">Kenya's Online Store</p>
   </header>
 
+  <!-- NAVIGATION -->
   <nav id="main-nav">
     <ul class="nav-list">
       <li><a href="#" class="nav-link">Home</a></li>
@@ -21,35 +23,48 @@
     </ul>
   </nav>
 
+  <!-- MAIN CONTENT -->
   <main id="main-content">
 
-    <section id="products" class="section">
-      <h2 class="section-title">Featured Products</h2>
+    <!-- PRODUCTS SECTION -->
+    <section id="products">
+      <h2 class="section-heading">Featured Products</h2>
 
+      <!-- PRODUCT CARD -->
       <article class="product-card">
-        <figure class="product-image">
-          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Kikoy+Wrap" alt="Kikoy Wrap" />
-          <figcaption class="image-caption">Handwoven Kenyan Kikoy</figcaption>
+        <figure class="product-figure">
+          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Kikoy+Wrap"
+               alt="Kikoy Wrap" class="product-image" />
+          <figcaption class="product-caption">Handwoven Kenyan Kikoy</figcaption>
         </figure>
         <h3 class="product-name">Kikoy Wrap</h3>
         <p class="product-price">KSh 1,200</p>
-        <p class="product-date">Added: <time datetime="2026-07-07">7 July 2026</time></p>
+        <p class="product-date">
+          Added: <time datetime="2026-07-07">7 July 2026</time>
+        </p>
+        <button class="btn">Add to Cart</button>
       </article>
 
+      <!-- PRODUCT CARD -->
       <article class="product-card">
-        <figure class="product-image">
-          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Beaded+Necklace" alt="Beaded Necklace" />
-          <figcaption class="image-caption">Maasai Beaded Necklace</figcaption>
+        <figure class="product-figure">
+          <img src="https://placehold.co/300x180/fff8ed/e08f00?text=Beaded+Necklace"
+               alt="Beaded Necklace" class="product-image" />
+          <figcaption class="product-caption">Maasai Beaded Necklace</figcaption>
         </figure>
         <h3 class="product-name">Beaded Necklace</h3>
         <p class="product-price">KSh 850</p>
-        <p class="product-date">Added: <time datetime="2026-07-05">5 July 2026</time></p>
+        <p class="product-date">
+          Added: <time datetime="2026-07-05">5 July 2026</time>
+        </p>
+        <button class="btn">Add to Cart</button>
       </article>
 
     </section>
 
+    <!-- SIDEBAR -->
     <aside id="sidebar">
-      <h3 class="sidebar-title">Categories</h3>
+      <h3 class="sidebar-heading">Categories</h3>
       <ul class="category-list">
         <li class="category-item">Fashion</li>
         <li class="category-item">Electronics</li>
@@ -59,6 +74,7 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer id="site-footer">
     <p class="footer-text">
       &copy; <time datetime="2026">2026</time> Nana Shop. Nairobi, Kenya.
