@@ -1,5 +1,16 @@
+/* =============================================
+   NANA SHOP — EXTERNAL STYLESHEET
+   Best Practices:
+   - Meaningful class and ID names
+   - Sections with comments
+   - No repeated code (DRY)
+   - Shorthand properties
+   - Proper indentation
+   - IDs for unique elements, classes for reuse
+============================================= */
 
-/* General */
+
+/* ---- General Styles ---- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +18,8 @@ body {
   color: #2c1a00;
 }
 
-/* Header */
+
+/* ---- Header ---- */
 #site-header {
   background-color: #e08f00;
   color: white;
@@ -25,7 +37,8 @@ body {
   font-size: 1rem;
 }
 
-/* Nav */
+
+/* ---- Navigation ---- */
 #main-nav {
   background-color: #2c1a00;
   padding: 10px 20px;
@@ -51,14 +64,16 @@ body {
   color: #e08f00;
 }
 
-/* Main */
+
+/* ---- Main Content Layout ---- */
 #main-content {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
 
-/* Section */
+
+/* ---- Products Section ---- */
 .products-section {
   flex: 1;
 }
@@ -67,9 +82,11 @@ body {
   color: #e08f00;
   border-bottom: 2px solid #e08f00;
   padding-bottom: 8px;
+  margin-bottom: 16px;
 }
 
-/* Article */
+
+/* ---- Product Cards (Article) ---- */
 .product-card {
   background-color: white;
   border: 1px solid #f0d080;
@@ -114,22 +131,24 @@ body {
   margin: 4px 0 10px;
 }
 
-/* Reusable Button */
+
+/* ---- Reusable Button ---- */
 .btn {
   background-color: #e08f00;
   color: white;
   border: none;
   border-radius: 6px;
   padding: 10px 20px;
-  cursor: pointer;
   font-size: 0.95rem;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: #c47a00;
 }
 
-/* Aside */
+
+/* ---- Aside (Sidebar) ---- */
 #sidebar {
   width: 200px;
   align-self: start;
@@ -155,7 +174,65 @@ body {
   border-bottom: 1px solid #f0d080;
 }
 
-/* Footer */
+
+/* ---- Contact Form Section ---- */
+.form-section {
+  padding: 30px 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid #f0d080;
+}
+
+#contact-form {
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #2c1a00;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f0d080;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fffdf7;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #e08f00;
+}
+
+/* Radio and Checkbox Labels */
+.radio-label,
+.checkbox-label {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Submit Button — extends .btn */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+/* ---- Footer ---- */
 #site-footer {
   background-color: #2c1a00;
   color: white;
