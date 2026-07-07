@@ -1,1 +1,280 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana Online Shop | Everyday Fashion, Delivered</title>
+
+    <!-- External CSS (Assignment requirement #2) -->
+    <link rel="stylesheet" href="nana-style.css">
+</head>
+<body>
+
+    <!-- ============================================
+         SEMANTIC ELEMENT 1: <header>
+         Site-wide banner with logo and tagline
+         ============================================ -->
+    <header id="site-header" class="site-header">
+        <div class="header-top">
+            <p class="crest" aria-hidden="true">&#128092;</p>
+            <div class="header-text">
+                <h1>Nana Online Shop</h1>
+                <p class="tagline">Everyday fashion, curated and delivered to your door.</p>
+            </div>
+        </div>
+
+        <!-- ============================================
+             SEMANTIC ELEMENT 2: <nav>
+             Primary site navigation
+             ============================================ -->
+        <nav class="main-nav" aria-label="Primary">
+            <ul>
+                <li><a href="#about">About Nana</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#gallery">Lookbook</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         SEMANTIC ELEMENT 3: <main>
+         Wraps the primary page content
+         ============================================ -->
+    <main>
+
+        <!-- ============================================
+             SEMANTIC ELEMENT 4: <section> (about)
+             ============================================ -->
+        <section id="about" class="section about-section">
+            <div class="about-text">
+                <h2>Small Shop, Big Closet</h2>
+                <p>
+                    Nana Online Shop started as a rack of hand-picked pieces
+                    in one bedroom and grew into a full closet of everyday
+                    essentials. We still choose every item ourselves, so
+                    what's on the site is what we'd actually wear.
+                </p>
+            </div>
+
+            <!-- ============================================
+                 SEMANTIC ELEMENT 5: <figure> + <figcaption>
+                 Image 1 — real photo, lazy loaded
+                 ============================================ -->
+            <figure class="feature-figure">
+                <img
+                    src="https://images.unsplash.com/photo-1603400521630-9f2de124b33b?w=900&auto=format&fit=crop&q=80"
+                    alt="Rack of neutral-toned clothing inside the Nana showroom"
+                    loading="lazy"
+                    width="900"
+                    height="600"
+                    class="feature-img">
+                <figcaption>Our showroom rack, restyled every week.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ============================================
+             SEMANTIC ELEMENT 6: <section> (products) containing
+             SEMANTIC ELEMENT 7: <article> (repeated, self-contained content)
+             ============================================ -->
+        <section id="products" class="section products-section">
+            <h2>This Week's Picks</h2>
+
+            <div class="products-grid">
+                <article class="product-card" id="product-wrap-dress">
+                    <h3>Nana Wrap Dress</h3>
+                    <p>Soft jersey, tie waist, true to size. Made for both desk days and dinner out.</p>
+                    <p class="price">KES 2,800</p>
+                    <p><mark>Almost sold out</mark></p>
+                </article>
+
+                <article class="product-card" id="product-tote">
+                    <h3>Everyday Tote Bag</h3>
+                    <p>Structured canvas tote with a leather strap, roomy enough for a laptop.</p>
+                    <p class="price">KES 1,500</p>
+                </article>
+
+                <article class="product-card" id="product-scarf">
+                    <h3>Printed Silk Scarf</h3>
+                    <p>Lightweight square scarf, doubles as a headwrap or bag charm.</p>
+                    <p class="price">KES 900</p>
+                </article>
+            </div>
+
+            <!-- ============================================
+                 SEMANTIC ELEMENT 8: <aside>
+                 Related but tangential content
+                 ============================================ -->
+            <aside class="notice-box" aria-label="Restock schedule">
+                <h3>Restock Schedule</h3>
+                <p>
+                    New pieces drop every
+                    <time datetime="2026-W1">Wednesday</time> at
+                    <time datetime="10:00">10:00 AM</time>. Popular sizes
+                    move fast, so add items to your order early.
+                </p>
+            </aside>
+        </section>
+
+        <!-- ============================================
+             SEMANTIC ELEMENT (section reused) — Lookbook gallery
+             Images 2 and 3, both real photos, both lazy-loaded
+             ============================================ -->
+        <section id="gallery" class="section gallery-section">
+            <h2>Lookbook</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img
+                        src="https://images.unsplash.com/photo-1750603247133-1fd1b4e4aca4?w=700&auto=format&fit=crop&q=80"
+                        alt="Clothing hanging on a rack in a minimalist boutique"
+                        loading="lazy"
+                        width="700"
+                        height="470">
+                    <figcaption>This season's rack, styled in soft neutrals.</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="https://images.unsplash.com/photo-1761896904104-334cad0f5d3b?w=700&auto=format&fit=crop&q=80"
+                        alt="Flat lay of clothing paired with watch, glasses, and small accessories"
+                        loading="lazy"
+                        width="700"
+                        height="470">
+                    <figcaption>How we'd style it: outfit plus accessories.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SEMANTIC ELEMENT (section reused) — Order form
+             ============================================ -->
+        <section id="order" class="section order-section">
+            <h2>Place Your Order</h2>
+
+            <!-- Search bar, outside the main form, styled as a utility -->
+            <form role="search" class="search-form" action="#" method="get">
+                <label for="site-search" class="visually-hidden">Search products</label>
+                <input
+                    type="search"
+                    id="site-search"
+                    name="q"
+                    placeholder="Search products, e.g. 'tote'"
+                    class="search-input">
+                <button type="submit" class="btn btn-secondary">Search</button>
+            </form>
+
+            <form id="order-form" class="order-form" action="#" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Your Details</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Nana">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Second Name</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Wanjiru">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="nana@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="delivery-date">Preferred Delivery Date</label>
+                            <input type="date" id="delivery-date" name="delivery-date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size-chart">Attach Fit Photo (optional)</label>
+                            <input type="file" id="size-chart" name="size-chart" accept=".jpg,.png,.pdf">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Preferences</legend>
+
+                    <div class="form-group">
+                        <span class="group-label">Delivery Method</span>
+
+                        <label class="radio-label">
+                            <input type="radio" name="fulfillment" value="delivery" checked>
+                            Doorstep Delivery
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="fulfillment" value="pickup">
+                            Pickup Point
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            Email me when new drops go live
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </section>
+
+        <!-- ============================================
+             SEMANTIC ELEMENT 9: <details> + <summary>
+             Collapsible FAQ content
+             ============================================ -->
+        <section id="faq" class="section faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <details class="faq-item">
+                <summary>Can I exchange a size after delivery?</summary>
+                <p>Yes — exchanges are free within 5 days as long as the tag is still attached.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you deliver outside Nairobi?</summary>
+                <p>We deliver countrywide through our courier partners, usually within 2–4 business days.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         SEMANTIC ELEMENT 10: <footer> containing <address>
+         ============================================ -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h2 class="footer-heading">Nana Online Shop</h2>
+                <p>Curated closet &middot; Countrywide delivery &middot; Since 2021</p>
+            </div>
+
+            <address>
+                8 Ring Road, Kilimani<br>
+                Nairobi, Kenya<br>
+                <a href="mailto:hello@nanashop.example">hello@nanashop.example</a><br>
+                +254 700 123 456
+            </address>
+        </div>
+        <p class="fine-print">&copy; 2026 Nana Online Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
